@@ -1,0 +1,37 @@
+
+
+
+&star_job
+
+   
+   show_log_description_at_start = .false.
+
+   pgstar_flag = .false.
+   history_columns_file = 'history_columns.list'  
+   load_saved_model = .true.
+   saved_model_name = 'RLO.mod'
+
+/ ! end of star_job namelist
+
+
+
+&controls
+    
+   log_directory = 'LOGS1'
+   star_history_header_name = 'headers.data'
+   profile_interval = 100
+   history_interval = 1
+   terminal_interval= 100
+   write_header_frequency = 1000
+      
+      
+
+
+/ ! end of controls namelist
+
+
+&pgstar
+
+
+      
+/ ! end of pgstar namelist

@@ -1,0 +1,27 @@
+
+&star_job
+
+  ! begin with a pre-main sequence model
+    create_pre_main_sequence_model = .false.
+
+  ! save a model at the end of the run
+    save_model_when_terminate=.true.
+    save_model_filename = 'RLO.mod'
+
+  ! display on-screen plots
+    pgstar_flag = .false.
+
+/ !end of star_job namelist
+
+
+&controls
+   star_history_header_name = 'headers.data'
+  ! starting specifications
+   profile_interval = 100
+   history_interval = 1
+   terminal_interval= 100
+   write_header_frequency = 1000
+
+
+
+/ ! end of controls namelist

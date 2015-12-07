@@ -1,0 +1,25 @@
+&binary_job
+
+   inlist_names(1) = 'inlist1' 
+   inlist_names(2) = 'inlist2'
+
+   evolve_both_stars = .false.
+
+/ ! end of binary_job namelist
+
+&binary_controls
+         
+   terminate_if_initial_overflow = .false.
+   
+   do_jdot_mb = .false
+   !transfer efficiency controls
+   limit_retention_by_mdot_edd = .false.
+
+   max_tries_to_achieve = 100
+   profile_interval = 100
+   history_interval = 1
+   terminal_interval= 100
+   write_header_frequency = 1000
+         
+/ ! end of binary_controls namelist
+
